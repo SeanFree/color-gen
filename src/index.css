@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer base {
+  * {
+    @apply !leading-[1] font-mono;
+  }
+
+  table {
+    @apply border-collapse;
+  }
+
+  thead {
+    @apply text-left
+      font-bold
+      text-sm
+  }
+
+  thead tr {
+    @apply border-b
+      border-b-pureGray;
+  }
+
+  th {
+    @apply
+      px-4
+      py-2;
+  }
+
+  td {
+    @apply px-4
+      py-4;
+  }
+
+  tbody tr {
+    @apply border-b
+      border-b-coolGray
+      last:border-b-0
+      odd:bg-neutral-50;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply !my-4;
+  }
+
+  h1 {
+    @apply text-4xl;
+  }
+
+  h2 {
+    @apply text-2xl;
+  }
+
+  h2 {
+    @apply text-xl;
+  }
+
+  p {
+    @apply mb-4;
+  }
+}
